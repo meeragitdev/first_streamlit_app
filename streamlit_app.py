@@ -27,7 +27,7 @@ import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
 #streamlit.text(fruityvice_response.json())
 
-add_fruit = streamlit.text_input('What fruit would you like information about?','Kiwi')
+add_fruit = streamlit.text_input2('add fruit?','Kiwi')
 streamlit.write('The user entered ', add_fruit)
 
 
