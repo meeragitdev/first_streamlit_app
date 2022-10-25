@@ -95,7 +95,7 @@ streamlit.text(my_add_fruit)
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
 my_cur.execute("insert into  FRUIT_LOAD_LIST values ('" + my_add_fruit +"')")
-from streamlit
+
 my_cur.execute("SELECT * FROM FRUIT_LOAD_LIST")
 my_data_rows = my_cur.fetchall()
 streamlit.header("THE FRUIT LOAD LIST CONTAINS")
