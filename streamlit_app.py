@@ -37,7 +37,7 @@ fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # data table
 streamlit.dataframe(fruityvice_normalized)
 
-streamlit.stop()
+#streamlit.stop()
 #import snowflake.connector
 
 add_fruit = streamlit.text_input('add fruit?','Kiwi')
